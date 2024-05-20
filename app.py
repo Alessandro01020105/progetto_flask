@@ -2,9 +2,7 @@ from flask import Flask, render_template
 import csv
 import mysql.connector
 
-
 app = Flask(__name__)
-app.config.from_object('config.Config')
 
 def create_db_connection():
     db_config = {
